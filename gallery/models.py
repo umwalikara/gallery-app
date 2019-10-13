@@ -30,10 +30,10 @@ class Image(models.Model):
     pub_date = models.DateTimeField(auto_now_add=True)
     description = models.TextField()
     
-    # @classmethod
-    # def get_all_images(cls):
-    #     image = cls.objects.all()
-    #     return image
+    @classmethod
+    def get_all_images(cls):
+        image = cls.objects.all()
+        return image
 
     # @classmethod
     # def search_by_category(cls,search_term):
