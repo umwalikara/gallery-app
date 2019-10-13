@@ -9,8 +9,8 @@ from .models import Image
 
 # Create your views here.
 
-# def welcome(request):
-#     return render(request, 'welcome.html')
+def welcome(request):
+    return render(request, 'welcome.html')
 
 # def gallery_of_day(request):
 #     date = dt.date.today()
