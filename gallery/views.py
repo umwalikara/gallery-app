@@ -53,11 +53,11 @@ def past_days_gallery(request, past_date):
         date = dt.datetime.strptime(past_date, '%Y-%m-%d').date()
 
     except ValueError:
-        # Raise 404 error when ValueError is thrown
-    #     raise Http404()
-    #     assert False
+        Raise 404 error when ValueError is thrown
+        raise Http404()
+        assert False
 
-    # if date == dt.date.today():
-    #     return redirect(gallery_of_day)
+    if date == dt.date.today():
+        return redirect(gallery_of_day)
 
-    # return render(request, 'all-news/past-gallery.html', {"date": date})
+    return render(request, 'all-news/past-gallery.html', {"date": date})
