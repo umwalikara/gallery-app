@@ -14,13 +14,13 @@ class Category(models.Model):
     class Meta:
         ordering = ['category']
 
-# class Location(models.Model):
-#     location= models.CharField(max_length =30)
+class Location(models.Model):
+    location= models.CharField(max_length =30)
    
-#     def __str__(self):
-#          return self.location
-#     class Meta:
-#         ordering = ['location']
+    def __str__(self):
+         return self.location
+    class Meta:
+        ordering = ['location']
 
 # class Image(models.Model):
 #     post = models.TextField()
