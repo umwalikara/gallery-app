@@ -4,7 +4,8 @@
 
 <div class="container"style="background-image: url(https://www.textures.com/system/gallery/photos/Plaster/Stucco/108984/ConcreteStucco0248_1_350.jpg);">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12"><br><br>
+      <h2 style="color: black;"><strong>View Location:</strong></h2>
       <button type="button" class="btn btn-outline-secondary"><a href="/location/1">kigali</a></button>
       <button type="button" class="btn btn-outline-secondary"><a href="/location/2">city</a></button>
       <button type="button" class="btn btn-outline-secondary"><a href="/location/3">art</a></button>
@@ -17,7 +18,7 @@
 
     <!-- displaying News articles -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <h2 class="text-center"> {{ gallery.post }} </h2>
+      <h2 class="text-center" style="color: black;" > {{ gallery.post }} </h2>
       <img class="foto" data-toggle="modal" data-target="#myModal{{gallery.id}}" src="{{gallery.image.url}}" class="img-responsive"
         width="500" height="400" alt="Image" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
     
