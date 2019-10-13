@@ -40,7 +40,7 @@ class Image(models.Model):
         gallery= cls.objects.filter(category__category__contains=search_term)
         return gallery 
     
-    # @classmethod
-    # def filter_by_location(cls, id):
-    #    gallery = Image.objects.filter(location_id=id)
-    #    return gallery
+    @classmethod
+    def filter_by_location(cls, id):
+       gallery = Image.objects.filter(location_id=id)
+       return gallery
