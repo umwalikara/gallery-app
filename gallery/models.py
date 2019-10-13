@@ -22,13 +22,13 @@ class Location(models.Model):
     class Meta:
         ordering = ['location']
 
-# class Image(models.Model):
-#     post = models.TextField()
-#     category = models.ForeignKey(Category)
-#     location = models.ForeignKey(Location)
-#     image = models.ImageField(upload_to = 'images/')
-#     pub_date = models.DateTimeField(auto_now_add=True)
-#     description = models.TextField()
+class Image(models.Model):
+    post = models.TextField()
+    category = models.ForeignKey(Category)
+    location = models.ForeignKey(Location)
+    image = models.ImageField(upload_to = 'images/')
+    pub_date = models.DateTimeField(auto_now_add=True)
+    description = models.TextField()
     
     # @classmethod
     # def get_all_images(cls):
