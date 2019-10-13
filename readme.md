@@ -11,13 +11,14 @@ this application will help the user to View different photos that interest them 
 
 ## BEHAVIOR Driven Development-BDD
 * Input:
-    -the user will sign up and then login
-    -the user will be able to create their own blog 
-    -the user will leave the comment, delete and update
+    -the user will be able to search by category  
+    
 * Output:
-    -the user will ti view the blogs they posted and other blog is posted
-    -the user will see the the comment commented
-    -the user will the inspiration random quotes
+    -the user will ti view different image
+    -the user will be able to view the detail of the image
+    -the user will see image of the different location
+    -the user will be able to copy the link of the image to share
+
 ## Technologies Used
 * python3.6
 * Flask
