@@ -35,10 +35,10 @@ class Image(models.Model):
         image = cls.objects.all()
         return image
 
-    # @classmethod
-    # def search_by_category(cls,search_term):
-    #     gallery= cls.objects.filter(category__category__contains=search_term)
-    #     return gallery 
+    @classmethod
+    def search_by_category(cls,search_term):
+        gallery= cls.objects.filter(category__category__contains=search_term)
+        return gallery 
     
     # @classmethod
     # def filter_by_location(cls, id):
