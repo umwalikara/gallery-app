@@ -6,22 +6,6 @@ import datetime as dt
 
 # Create your models here.
 
-class Category(models.Model):
-    category = models.CharField(max_length =30)
-    
-    def __str__(self):
-        return self.category
-    class Meta:
-        ordering = ['category']
-
-class Location(models.Model):
-    location= models.CharField(max_length =30)
-   
-    def __str__(self):
-         return self.location
-    class Meta:
-        ordering = ['location']
-
 class Image(models.Model):
     post = models.TextField()
     category = models.ForeignKey(Category)
@@ -44,3 +28,37 @@ class Image(models.Model):
     def filter_by_location(cls, id):
        gallery = Image.objects.filter(location_id=id)
        return gallery
+
+    def __str__(self):
+        return self.name  
+
+    def save_image(self):
+        self.save()
+    def delete_image(self):
+        self.delete()
+
+class Category(models.Model):
+    category = models.CharField(max_length =30)
+    
+    def __str__(self):
+        return self.category
+    class Meta:
+        ordering = ['category']
+
+    def save_category(self):
+        self.save()
+    def delete_category(self):
+        self.delete()
+
+class Location(models.Model):
+    location= models.CharField(max_length =30)
+   
+    def __str__(self):
+         return self.location
+    class Meta:
+        ordering = ['location']
+
+    def save_location(self):
+        self.save()
+    def delete_location(self):
+        self.delete()
